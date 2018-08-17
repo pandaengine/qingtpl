@@ -1,0 +1,37 @@
+{if($var)}
+  111
+{elseif(54>8967)/}
+  222
+{else if($v2)/}
+  2.5
+{else/}
+  333
+{/if}
+
+
+{switch($num)}
+ {case 1:} 111 <br/> {break;}
+ {case 2:} 222 <br/> {break;}
+ {default:} ddd <br/> {break;}
+{/switch}
+
+{for($i=0;$i<4;$i++)}
+ {$i}
+{for($j=0;$j<4;$j++)}
+ {$j}
+{/for}
+{/for}
+
+{foreach($list as $k=>$v)}
+	<tr>
+		<td>{$k}</td>
+		<td>{$v}</td>
+	</tr>
+   {foreach($list as $k2=>$v2)}
+	<tr>
+		<td>{$k2}</td>
+		<td>{$v2}</td>
+	</tr>
+	{/foreach}
+{/foreach}
+
